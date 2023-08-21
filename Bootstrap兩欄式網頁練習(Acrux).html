@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="crux.png" rel="icon" type='image/x-icon' width='16px' height='16px'>
+    <title>兩欄式網頁設計練習</title>
+    <style>
+        .sidebar {background-image: url(Ctx_crux.gif);position: fixed;background-size: cover;background-position: center 0;height: 100vh;}
+        .sidebarbox {height: 50vh;}
+        .sidebarphoto {height: 20vh;}/*不要有position，讓照片跟父容器一起變換*/
+        .zoom:hover {scale: 1.5;transition: 1s;}
+
+        @media (max-width:992px){
+            .sidebar {
+                position: static;
+                height: 30vh;
+                background-image: none;
+                background-color: black;}
+            .sidebarbox {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<body>
+    <!--navbar本體-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-6 text-white px-2" href="Bootstrap兩欄式網頁練習(Crux).html"><img src="crux2.png" width="28px"> CRUX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"><a href="#crux1"></a></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto px-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Gacrux).html"><i class="bi bi-star-fill"></i>Gacrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-star-fill"></i>Acrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Mimosa).html"><i class="bi bi-star-fill"></i>Becrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Deltacru).html"><i class="bi bi-star-fill"></i>Delta Cru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(epsiloncru).html"><i class="bi bi-star-fill"></i>Epsilon Cru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--sidebar-->
+    <div class="container-fluid mt-5">
+        <div class="row"><!--排版一定要父容器有row-->
+            <div class="col-lg-4 sidebar"><!--sidebar-->
+                <div class="row justify-content-center align-items-center sidebarbox"><!--sidebarbox-->
+                    <div class="text-center">
+                        <img src="Crux_IAU.svg.png" style="background-color: white;overflow: hidden;"  class="rounded-circle sidebarphoto my-5 mx-auto">
+                        <h5 class="fs-4 text-white">Crux</h5>
+                    </div>
+                </div>
+            </div>
+    <!--content-->
+            <div class="col-lg-8 bg-light offset-lg-4"><!--位移四格-->
+                <div class="col-lg-10 mx-auto py-4">   
+                    <h2 class="display-6" id="crux1"><img src="crux.png" width="36px" class="d-inline-block">Acrux</h2>
+                    <h4>十字架二</h4>
+                    <p>十字架二（α Cru / 南十字座α）是南十字座內最亮的恆星，也是夜空中第13亮的恆星，視星等0.77。在西方稱為Acrux。
+                        十字架二是出現在澳洲和紐西蘭國旗上的南十字座五顆星中之一，他也出現在巴西國旗上的南十字座內，與旗幟上的26顆星各自分別代表一個州，
+                        他代表的是聖保羅州（São Paulo）。<br>
+                        十字架二的位置大約在南緯60°，要在北回歸線以南的地區才能看見。儘管如此，由於地球的晃動，古印度的天文學家稱他為<em>三炫谷（Tri-shanku）</em>，
+                        古老的印度梵文也以代表吉祥的萬字符號（卍）代表南十字座。在梵文，以意思是非常穩定的<em>Dhruva</em>稱呼北極星，而以意義是<em>不穩定</em>或<em>非常糟糕</em>
+                        的<em>Tri-shanku</em>和神話故事來稱呼南十字二，以隱喻其難以捉摸的運動。其實十字架二只是南十字座簡單組合中的一顆星，他是最南邊的一顆亮星，比半人馬座的南門二
+                        （半人馬座α）更為偏南。<br>
+                        十字架二是一個距離太陽系320光年遠的三合星系統，但以目視觀測只能分辨出兩顆星。α<sup>1</sup>和α<sup>2</sup>之間相距只有4弧秒。α<sup>1</sup>
+                        的光度是1.40等，α<sup>2</sup>是2.09等，
+                        兩顆星都是高溫的B型星（接近O型星），表面溫度分別是28,000和26,000K，個別的亮度分別是太陽的25,000和16,000倍。α<sup>1</sup>和α<sup>2</sup>
+                        的軌道周期非常長，使得這兩顆星看起來幾乎是靜止不動。由兩顆星最小的距離只有430天文單位估計，軌道周期有1,500年之久，而且可能還會更長。<br>
+                        α<sup>1</sup>本身還是一顆光譜聯星，兩者的質量分別是太陽的14倍和10倍，以76天的周期在相距1天文單位的距離上互繞。
+                        α<sup>2</sup>和更亮的伴星α<sup>1</sup>的質量建議這些恆星有一天將會成為超新星。α<sup>1</sup>比較暗的那一顆伴星，將會成為大質量的白矮星繼續他的餘生。<br>
+                        有一顆距離十字架二三合星系統90弧秒的B型次巨星，可能會對十字架二產生重力上的影響。然而，如果他確實在十字架二的附近，相較於他的光譜類型，
+                        光度就顯得太暗了。所以他可能只是一顆光學雙星，與太陽系的距離可能是十字架二的兩倍，也就是與十字架二的距離像太陽系一樣遠。
+                    </p>
+                    <div class="row pb-3">
+                        <div class="col-sm my-2 zoom">
+                            <img src="Acrux_kstars.png" class="img-fluid w-75">
+                            <p>圖一，十字架二的位置</p>
+                        </div>
+                    </div>
+                    
+        
+                
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

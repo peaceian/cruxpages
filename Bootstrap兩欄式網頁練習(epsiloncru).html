@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="crux.png" rel="icon" type='image/x-icon' width='16px' height='16px'>
+    <title>兩欄式網頁設計練習</title>
+    <style>
+        .sidebar {background-image: url(Ctx_crux.gif);position: fixed;background-size: cover;background-position: center 0;height: 100vh;}
+        .sidebarbox {height: 50vh;}
+        .sidebarphoto {height: 20vh;}/*不要有position，讓照片跟父容器一起變換*/
+        .zoom:hover {scale: 1.5;transition: 1s;}
+
+        @media (max-width:992px){
+            .sidebar {
+                position: static;
+                height: 30vh;
+                background-image: none;
+                background-color: black;}
+            .sidebarbox {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<body>
+    <!--navbar本體-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-6 text-white px-2" href="Bootstrap兩欄式網頁練習(Crux).html"><img src="crux2.png" width="28px"> CRUX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"><a href="#crux1"></a></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto px-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Gacrux).html"><i class="bi bi-star-fill"></i>Gacrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Acrux).html"><i class="bi bi-star-fill"></i>Acrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Mimosa).html"><i class="bi bi-star-fill"></i>Becrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Deltacru).html"><i class="bi bi-star-fill"></i>Delta Cru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-star-fill"></i>Epsilon Cru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--sidebar-->
+    <div class="container-fluid mt-5">
+        <div class="row"><!--排版一定要父容器有row-->
+            <div class="col-lg-4 sidebar"><!--sidebar-->
+                <div class="row justify-content-center align-items-center sidebarbox"><!--sidebarbox-->
+                    <div class="text-center">
+                        <img src="Crux_IAU.svg.png" style="background-color: white;overflow: hidden;"  class="rounded-circle sidebarphoto my-5 mx-auto">
+                        <h5 class="fs-4 text-white">Crux</h5>
+                    </div>
+                </div>
+            </div>
+    <!--content-->
+            <div class="col-lg-8 bg-light offset-lg-4"><!--位移四格-->
+                <div class="col-lg-10 mx-auto py-4">   
+                    <h2 class="display-6" id="crux1"><img src="crux.png" width="36px" class="d-inline-block">Epsilon cru</h2>
+                    <h4>十字架增一</h4>
+                    <p>
+                      十字架增一 (南十字座ε) 是南十字座中一顆光譜類型為K3III的4等星，在波多黎各它經常被稱為<i>Intrometida</i> (intrusive)。這顆恆星是橘色的巨星，距離地球228光年。
+                    </p>
+                    <h4>現代的遺贈</h4>
+                    <p>
+                      十字架增一是南十字座的五顆星之一，它出現在澳大利亞和巴布亞紐幾內亞的國旗上。它也是巴西國旗上26顆星星之一，每一顆代表一個州，
+                      十字架增一代表的是聖埃斯皮里圖州。
+                    </p>
+                    <div class=" pb-3 w-100">
+                        <div class="col-sm my-2">
+                          <img src="epsiloncru.jpg" class="img-fluid w-50 zoom">
+                          <p>圖一，十字架增一(ε Cru) cited in <a href="https://www.astrobin.com/354607/0/" target="_blank">https://www.astrobin.com/354607/0/</a></p>
+                        </div>
+                        <div class="col-sm my-2 w-100">
+                          <img src="epsiloncru1.jpg" class="img-fluid w-50 zoom">
+                          <p>圖二，在這張影像右側中間的藍白色亮星就是十字架增一。這張影響使用的是特殊波長的紅外線拍攝的，藍色對應的波長是3.4微米至4.6微米。</p>
+                      </div>
+                    </div>
+                    
+        
+                
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

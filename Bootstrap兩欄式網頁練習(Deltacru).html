@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="crux.png" rel="icon" type='image/x-icon' width='16px' height='16px'>
+    <title>兩欄式網頁設計練習</title>
+    <style>
+        .sidebar {background-image: url(Ctx_crux.gif);position: fixed;background-size: cover;background-position: center 0;height: 100vh;}
+        .sidebarbox {height: 50vh;}
+        .sidebarphoto {height: 20vh;}/*不要有position，讓照片跟父容器一起變換*/
+        .zoom:hover {scale: 2.0;transition: 1s;}
+
+        @media (max-width:992px){
+            .sidebar {
+                position: static;
+                height: 30vh;
+                background-image: none;
+                background-color: black;}
+            .sidebarbox {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<body>
+    <!--navbar本體-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-6 text-white px-2" href="Bootstrap兩欄式網頁練習(Crux).html"><img src="crux2.png" width="28px"> CRUX</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"><a href="#crux1"></a></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto px-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Gacrux).html"><i class="bi bi-star-fill"></i>Gacrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Acrux).html"><i class="bi bi-star-fill"></i>Acrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(Mimosa).html"><i class="bi bi-star-fill"></i>Becrux</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-star-fill"></i>Delta cru</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Bootstrap兩欄式網頁練習(epsiloncru).html"><i class="bi bi-star-fill"></i>Epsilon Cru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--sidebar-->
+    <div class="container-fluid mt-5">
+        <div class="row"><!--排版一定要父容器有row-->
+            <div class="col-lg-4 sidebar"><!--sidebar-->
+                <div class="row justify-content-center align-items-center sidebarbox"><!--sidebarbox-->
+                    <div class="text-center">
+                        <img src="Crux_IAU.svg.png" style="background-color: white;overflow: hidden;"  class="rounded-circle sidebarphoto my-5 mx-auto">
+                        <h5 class="fs-4 text-white">Crux</h5>
+                    </div>
+                </div>
+            </div>
+    <!--content-->
+            <div class="col-lg-8 bg-light offset-lg-4"><!--位移四格-->
+                <div class="col-lg-10 mx-auto py-4">   
+                    <h2 class="display-6" id="crux1"><img src="crux.png" width="36px" class="d-inline-block">Delta cru</h2>
+                    <h4>十字架四</h4>
+                    <p>
+                      十字架四 (δ Cru) 是拱極星座南十字座內的一顆恆星，在波多黎各語中這顆恆星的名字是Pálida (Pale [one])。
+                      這顆星的視星等是2.79，距離地球大約345光年（106秒差距），是被稱為南十字星群的四顆星中最暗的一顆。
+                      十字架四是顆質量大、溫度高、高速旋轉並在發展成為一顆巨星的過程中。
+                    </p>
+                    <h4>性質</h4>
+                    <p>
+                      這顆恆星的光譜類型是B2 IV，在恆星演化的過程中正在從主序星進入次巨星的階段。它即將要成為紅巨星，而有朝一日將成為白矮星。
+                      目前，它在大氣層外圍的有效溫度是22,570k，輻射的發光度大約是太陽的1,000倍，導致它發射出藍白色的光。十字架四是備受關注的仙王座β型變星候選者
+                      ，以1.3小時的週期細微的變化著。它自轉的非常快，估計旋轉速度是210 km s<sup>-1</sup>。<br>
+                      十字架四是天蠍-半人馬星協的低半人馬南十字 (LCC，Lower Centaurus Crux) 次級團的成員，這是一個大質量恆星組成的OB星協，
+                      有著共同的起源和空間速度。這是最靠近太陽的OB星協，LCC的成員年齡都在1,600萬至2,000萬歲之間。
+                    </p>
+                    <h4>在文化中</h4>
+                    <p>
+                      在中國，十字架四是近南極星區星官十字架，意為四顆星組成的十字架的成員。這個星官的主要成員還有十字架一 (γ Cru)、十字架二 (α Cru)、
+                      和十字架三 (β Cru)。<br> 居住在澳洲中部Hermannsburg周圍的阿蘭達人和Luritja人部落稱十字架四為Iritjinga，意思是"猛鷹"，
+                      加上十字架一、庫樓七 (半人馬座γ)、馬尾三 (半人馬座δ) 組成一個四邊形。<br>
+                      十字架四也出現在澳洲、紐西蘭和巴布亞紐幾內亞等國家的國旗上，在這些國旗上都有象徵南十字座的五顆星。它也出現在巴西國旗上，是26顆星中的一顆。
+                      這26顆星每一顆代表巴西的一個州，十字架四代表的是米納斯吉拉斯。
+                    </p>
+                    <div class="row pb-3">
+                        <div class="col-sm my-2">
+                            <img src="deltacru.png" class="img-fluid zoom w-75">
+                            <p>圖一，十字架四的位置</p>
+                        </div>
+                    </div>
+                    
+        
+                
+        
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
