@@ -22,3 +22,9 @@ The sidebar is fixed at the left, and the screen or window is smaller than 992px
                 height: auto;
             }
         }
+The images will enlarge while the mouse hovers on.
+    
+    .zoom:hover {
+            scale: 2.0;
+            transition: 1s;
+        }
