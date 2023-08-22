@@ -1,7 +1,7 @@
 # Crux pages
 This project is a multi-page about the introduction of Crux, by using Bootstrap.<br>
 All Crux reference from WiKi, ref='https://zh.wikipedia.org/zh-tw/%E5%8D%97%E5%8D%81%E5%AD%97%E5%BA%A7' <br>
-The sidebar is fixed at the left, and the screen or window is smaller than 992px, changing into static at the top.<br>
+The sidebar is fixed at the left, when the screen or window is smaller than 992px, changing into static at the top.<br>
 
      .sidebar {
             background-image: url(Ctx_crux.gif);
